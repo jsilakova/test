@@ -1,0 +1,72 @@
+.card {
+	border: 0;
+	
+	&:hover,
+	&:focus {
+		a {
+			opacity: 0.7;
+		}
+	}
+	
+	&-video {
+		background: $brand-gradient;
+		background-position: 50% 0;
+		background-size: cover;
+	}
+
+	&-description {
+		@include brand-border(0 0 4px);
+		overflow: hidden;
+		
+		@include media-breakpoint-down(md) {
+			border-width: 0 0 2px;
+		}
+	}
+
+	&-title {
+		
+		&-all {
+			margin: 0;
+			
+			a {
+				display: block;
+				padding: 28px 30px 20px;
+				transition: transform 0.3s linear, opacity 0.2s linear;
+				
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					color: transparent;
+					text-fill-color: transparent;
+					transform: translateX(15px);
+				}
+
+				@include media-breakpoint-down(md) {
+					padding: 12px 15px 8px;
+				}
+			}
+			
+			// remove if start use link
+			span {
+				display: block;
+				padding: 28px 30px 20px;
+				
+				@include media-breakpoint-down(md) {
+					padding: 12px 15px 8px;
+				}
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			font-size: 0.75rem;
+		}
+	}
+
+	&.bg-dark {
+		a {
+			color: $white;
+			-webkit-text-fill-color: $white;
+		    text-decoration: none;
+		}
+	}
+}

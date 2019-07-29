@@ -1,0 +1,45 @@
+.modal {
+
+  &-content-xl {
+
+    @include media-breakpoint-up(md) {
+      .modal-header,
+      .modal-body {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+	
+	&-content {
+		background-image: linear-gradient(to left, $brand-gradient-start, $brand-gradient-end);;
+	}
+
+  .img-center {
+    margin: 0 auto 30px;
+    width: 150px;
+    height: auto;
+    display: block;
+  }
+
+  &.modal-video {
+    padding: 15px;
+
+    .close {
+      position:absolute;
+      top:-25px;
+      right: -20px;
+      color: $white;
+      opacity: 1;
+    }
+
+    .modal-body {
+      padding: 5px;
+    }
+
+    video {
+      width: 100%;
+      height:auto;
+      max-height: 90vh;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+extends base/layout
+
+append mainVars
+	- page = "homepage"
+
+block main-content
+	include base/preloader
+	
+	.container-fluid
+		
+		include pages/homepage/_section-video
+		include pages/homepage/_section-sdk
+		include pages/homepage/_section-tech
+		include pages/homepage/_section-why-us
+		include pages/homepage/_section-clients
+		include pages/homepage/_section-team
+	include pages/homepage/_section-instagram
+	.container-fluid
+		div( data-aos="fade-right")
+			include pages/homepage/_section-contact
+	include components/_modal-video
+	
+
+block preloaderStyles
+
+block footer-js
+	script
+		include ../js/preloader.js

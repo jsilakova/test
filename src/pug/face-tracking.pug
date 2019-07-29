@@ -1,0 +1,48 @@
+extends base/layout
+
+block main-content
+	- var currentCount = 0
+	+sdk-description(0)
+
+block sdkDescriptionContent
+	.section-content-block.mw-90
+		p 
+			= currentItem.preview
+		p Banuba’s technology uses precise motion tracking at 200 frames-per-second (FPS), with high stability even at extreme angles to deliver superior real-time face tracking.
+	.section-content-block
+		h2 Features
+		ul.content-list
+			li Age, gender, ethnicity detection
+			li Moustache and glasses detection
+			li 3D facial mesh generation
+			li Superior lighting detection
+			li The patented “anti-jitter” technology for clear images
+			li Multi-face
+			li Cross-platform
+			li Easy-to-use
+	.section-content-block
+		h2 Use Cases
+		.row
+			.col-md-6
+				h3 Entertainment
+				ul.content-list
+					li Apply super real AR masks and face modification effects. 
+					li Beautify in real time
+				h3 Marketing and analytics
+				ul.content-list
+					li Analyze and predict user behaviour
+				h3 Fashion and beauty
+				ul.content-list
+					li Let users try on your products virtually. 
+					li Change makeup or hairstyles in real time
+
+			.col-md-6
+				h3 Security
+				ul.content-list
+					li Implement face-based authentication. 
+					li Track and spot faces of conference attendees
+				
+				
+				h3 Other
+				ul.content-list
+					li Turn on battery saving mode when the phone is put down

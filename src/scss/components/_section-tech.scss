@@ -1,0 +1,259 @@
+$mobileRadius: 56px;
+$tect-tab-gap: 6px;
+
+.section-tech {
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 250px;
+  }
+
+  .section-title {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 37px;
+    }
+  }
+}
+
+.tech-video {
+  padding-top: 13px;
+  
+  .brand-holder {
+    margin-right: 15px;
+    
+    &:after {
+      left: 20px;
+      bottom: -20px;
+      border-width: 3px;
+    }
+  }
+
+  video {
+    width:100%;
+    height: auto;
+  }
+}
+
+.tech-content {
+  @include media-breakpoint-down(md) {
+     font-size: 0.7rem;
+     line-height: 1.43;
+     margin-bottom: 10px;
+  }
+
+  .tech-content-holder {
+    width: 100%;
+     
+    @include media-breakpoint-down(md) {
+      padding: 0 ($tect-tab-gap+2px) 25px;
+    }
+  }
+  
+  h1 {
+    margin: 0 0 22px;
+
+    @include media-breakpoint-up(md) {
+      margin: 0 0 50px;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 30px;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  p {
+    margin: 0 0 25px;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0 7px;
+    }
+  }
+
+  .read-more {
+    margin: 10px 0;
+    
+    @include media-breakpoint-down(md) {
+      margin: 6px 0;
+    }
+  }
+
+  .btn-holder {
+    padding-top: 7px;
+    display:flex;
+
+    @include media-breakpoint-down(md) {
+      justify-content: stretch;
+
+      .btn {
+        width:100%;
+        margin: 0 20px 0 0;
+
+        &:last-child {
+          margin:0;
+        }
+      }
+    }
+  }
+
+  .btn {
+
+    @include media-breakpoint-up(md) {
+      min-width: 176px;
+      padding: 15px 15px;
+      
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+  }
+
+  
+}
+
+.technologies-nav {
+  position: relative;
+  margin: 0 -20px 38px 0 ;
+  text-transform: uppercase;
+  display: flex;
+  
+  .btn {
+    font-size: 0.75rem;
+    margin: 0 20px 20px 0;
+    padding: 10px 17px 8px;
+  }
+}
+
+.tech-content {
+  &-frame {
+    width: 100%;
+  }
+
+  &-item {
+    display: block;
+    transition: opacity .4s ease-in-out;
+
+    @include media-breakpoint-down(md) {
+      background: #323232;
+      margin: 0 0 3px;
+      border: solid transparent;
+      border-width: 0 0 0 2px;
+      
+      
+      &.open {
+        @include brand-border(2px);
+        border-width: 0 0 0 2px;
+        background: #212222;
+      }
+
+      >div {
+        width: 100%;
+      }
+    } 
+  }
+}
+
+.btn-watch-video {
+  span {
+    &:before {
+      content: ''; 
+      display:inline-block;
+      border: 5px solid transparent; 
+      border-left: 8px solid $white;
+    }
+  }
+}
+
+
+.btn-tech-mobile {
+  display: block;
+  text-align: left;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  padding: 12px $tect-tab-gap;
+  
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    transition: transform .2s linear;
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+  }
+
+  &[aria-expanded="true"] {
+    &:after {
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+.tech-download-holder {
+  padding: 15px 0 40px;
+  text-align: center;
+  
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 20px;
+  }
+  
+  .btn {
+    min-width: 50%;
+    
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+//- remove tabs for md down
+@include media-breakpoint-down(md) {
+  .technologies-nav,
+  .tech-video,
+  .tech-download {
+    display: none; 
+  }
+
+  .tech-content {
+    >.tab-pane {
+      display: block !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  
+}
+
+//- remove accordion for md up
+@include media-breakpoint-up(lg) {
+  .btn-tech-mobile,
+  .btn-watch-video,
+  .tech-download-holder {
+    display: none; 
+  }
+
+  .tech-content {
+    .collapse {
+      display: block !important;
+    }
+  }
+}

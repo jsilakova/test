@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Banuba is a computer vision centric startup. Everything we do is around artificial intelligence, computer vision and other machine learning technologies.">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.ico" sizes="16x16">
+    <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="assets/favicon/favicon-192.png" sizes="192x192">
+    <title>Banuba – AR: the future overlaid on today</title>
+    <link href="css/all.css?v=1.0.94" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container-fluid">
+          <nav class="navbar navbar-dark navbar-expand-lg"><a class="navbar-brand" href="/"><img class="logotype" src="assets/logos/logo-banuba.svg" width="86" height="70" alt="BANUBA logotype"></a><a class="btn-navigation-open" href="#"><span class="icon-hamburger"><span></span><span></span><span></span><span></span></span></a>
+            <div class="main-navigation">
+              <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="/sdk-tutorials">SDK demo</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/technology">Technology</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/request-sdk-demo">Request demo</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <canvas id="nokey" width="100vw" height="100vh">Your Browser Don't Support Canvas, Please Download Chrome ^_^``</canvas>
+        <div class="preloader-area">
+          <div class="sk-folding-cube">
+            <div class="sk-cube sk-cube-1"></div>
+            <div class="sk-cube sk-cube-2"></div>
+            <div class="sk-cube sk-cube-4"></div>
+            <div class="sk-cube sk-cube-3"></div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <section class="section section-promo">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1 class="text-brand display-4">Build smart apps easily with&nbsp;FaceAR&nbsp;SDK</h1>
+                <p>See what you can do</p>
+                <div class="btn-holder"><a class="btn btn-primary btn-brand btn-lg border-sm-down" href="/request-sdk-demo">Request Demo</a><a class="btn btn-secondary btn-brand btn-lg border-sm-down" href="#" data-href="contact-section">Contact Us</a></div>
+              </div>
+              <div class="col-lg-4"><img class="d-none d-lg-block section-promo-img" srcset="assets/images/homepage/phone-with-mask.png, assets/images/homepage/phone-with-mask@2x.png 2x" src="assets/images/homepage/phone-with-mask.png" alt=""></div>
+            </div>
+            <div class="scroll-line">
+              <div class="decor-line"> </div><span>SCROLL DOWN</span>
+            </div>
+          </section>
+          <section class="section section-video">
+            <div class="brand-frame" data-aos="fade-up">
+              <div class="brand-holder">
+                <div class="brand-decor-content">
+                  <div class="video-holder embed-responsive embed-responsive-16by9 video-banuba">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rju8BGlPAoc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section section-sdk" data-aos="zoom-in-up" data-aos-duration="1000">
+            <h1 class="section-title text-center">FaceAR SDK</h1>
+            <div class="section-text">
+              <p>Create unrivaled AR experiences. Get insights into your  audience. Engage and retain customers like never before.</p>
+            </div>
+            <div class="promo-info row">
+              <div class="col">
+                <div class="promo-info-item" data-aos="fade-up">
+                  <div class="promo-info-content"><span class="max">26</span><span>patents</span></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="promo-info-item" data-aos="fade-up">
+                  <div class="promo-info-content"><span class="max">5</span><span>platforms</span></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="promo-info-item" data-aos="fade-up">
+                  <div class="promo-info-content"><span class="max">150</span><span>professionals</span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section section-tech" id="technology-section">
+            <h1 class="section-title" data-aos="fade-right" data-aos-duration="1000">Explore Our Technologies</h1>
+            <div class="technologies-nav nav js-nav-tabs-autoplay" role="tablist" data-aos="fade-up" data-aos-duration="1000"><a class="btn btn-outline-primary btn-sm btn-rounded active" id="tech01-tab" data-toggle="tab" href="#tech01" aria-controls="tech01" role="tab" aria-selected="true"><span> Face tracking and segmentation</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech02-tab" data-toggle="tab" href="#tech02" aria-controls="tech02" role="tab" aria-selected="false"><span> Hair segmentation</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech03-tab" data-toggle="tab" href="#tech03" aria-controls="tech03" role="tab" aria-selected="false"><span> Action units detection (Avatar)</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech04-tab" data-toggle="tab" href="#tech04" aria-controls="tech04" role="tab" aria-selected="false"><span> Occlusion detection</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech05-tab" data-toggle="tab" href="#tech05" aria-controls="tech05" role="tab" aria-selected="false"><span> Glasses detection</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech06-tab" data-toggle="tab" href="#tech06" aria-controls="tech06" role="tab" aria-selected="false"><span> Eye tracking</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech07-tab" data-toggle="tab" href="#tech07" aria-controls="tech07" role="tab" aria-selected="false"><span> Hands segmentation</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech08-tab" data-toggle="tab" href="#tech08" aria-controls="tech08" role="tab" aria-selected="false"><span> Beautification</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech09-tab" data-toggle="tab" href="#tech09" aria-controls="tech09" role="tab" aria-selected="false"><span> Eyes segmentation</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech10-tab" data-toggle="tab" href="#tech10" aria-controls="tech10" role="tab" aria-selected="false"><span> Background separation</span></a><a class="btn btn-outline-primary btn-sm btn-rounded" id="tech11-tab" data-toggle="tab" href="#tech11" aria-controls="tech11" role="tab" aria-selected="false"><span> Heart rate detection</span></a>
+            </div>
+            <div class="section-tech-holder" id="technologiesContent" data-aos="fade-up" data-aos-duration="1000">
+              <div class="tech-content tab-content js-tab-content-autoplay">
+                    <div class="tech-content-item tab-pane fade active show" id="tech01" aria-labelledby="tech01-tab" role="tabpanel">
+                      <div id="headingtech01">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech01" aria-expanded="false" aria-controls="collapsetech01"> Face tracking and segmentation
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech01" aria-labelledby="headingtech01" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Face tracking and segmentation
+                              </h2>
+                              <p> Build ultimately personalized web and mobile solutions based on facial recognition. Let customers experience your business in a whole new way.
+                              </p>
+                              <p><a class="read-more" href="/face-tracking">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a><a class="btn btn-primary btn-brand btn-watch-video" href="#" data-video="https://www.youtube.com/embed/o99X_9QNeHk?rel=0"> <span>Watch video</span></a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-face-tracking">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o99X_9QNeHk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech02" aria-labelledby="tech02-tab" role="tabpanel">
+                      <div id="headingtech02">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech02" aria-expanded="false" aria-controls="collapsetech02"> Hair segmentation
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech02" aria-labelledby="headingtech02" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Hair segmentation
+                              </h2>
+                              <p> Let customers change hairstyles and hair colours at a click to find their perfect look. Boost your consumer satisfaction by offering an easy-to-use hair color changer. 
+                              </p>
+                              <p><a class="read-more" href="/hair-segmentation">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a><a class="btn btn-primary btn-brand btn-watch-video" href="#" data-video="https://www.youtube.com/embed/XCPFcRA1AO8?rel=0"> <span>Watch video</span></a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-hair-segmentation">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XCPFcRA1AO8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech03" aria-labelledby="tech03-tab" role="tabpanel">
+                      <div id="headingtech03">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech03" aria-expanded="false" aria-controls="collapsetech03"> Action units detection (Avatar)
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech03" aria-labelledby="headingtech03" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Action units detection (Avatar)
+                              </h2>
+                              <p> Detect the movements of individual facial muscles and translate them into facial expressions. Track users’ moods and emotions.
+                              </p>
+                              <p><a class="read-more" href="/action-units-detection">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a><a class="btn btn-primary btn-brand btn-watch-video" href="#" data-video="https://www.youtube.com/embed/-Cwf4aljV_E?rel=0"> <span>Watch video</span></a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-action-units">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-Cwf4aljV_E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech04" aria-labelledby="tech04-tab" role="tabpanel">
+                      <div id="headingtech04">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech04" aria-expanded="false" aria-controls="collapsetech04"> Occlusion detection
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech04" aria-labelledby="headingtech04" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Occlusion detection
+                              </h2>
+                              <p> Apply robust facial recognition and tracking that works even with partial visibility of the face. Our technology supports occlusion up to 50%.
+                              </p>
+                              <p><a class="read-more" href="/occlusion-detection">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-occlusion">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech05" aria-labelledby="tech05-tab" role="tabpanel">
+                      <div id="headingtech05">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech05" aria-expanded="false" aria-controls="collapsetech05"> Glasses detection
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech05" aria-labelledby="headingtech05" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Glasses detection
+                              </h2>
+                              <p> Power your analytics and marketing strategy with real-time robust glasses detection. Identify users who wear glasses and approach them with relevant and timely offers. 
+                              </p>
+                              <p><a class="read-more" href="/glasses-detection">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a><a class="btn btn-primary btn-brand btn-watch-video" href="#" data-video="https://www.youtube.com/embed/A3qlQU4dvzQ?rel=0"> <span>Watch video</span></a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-glasses-detection">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3qlQU4dvzQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech06" aria-labelledby="tech06-tab" role="tabpanel">
+                      <div id="headingtech06">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech06" aria-expanded="false" aria-controls="collapsetech06"> Eye tracking
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech06" aria-labelledby="headingtech06" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Eye tracking
+                              </h2>
+                              <p> Get insight into your customers' visual attention. Track gaze direction with subpixel accuracy and detect precise eye movements to understand your users’ behaviour. 
+                              </p>
+                              <p><a class="read-more" href="/eye-tracking">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a><a class="btn btn-primary btn-brand btn-watch-video" href="#" data-video="https://www.youtube.com/embed/0Xj3vz6uQX0?rel=0"> <span>Watch video</span></a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-eye-gaze-tracking">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0Xj3vz6uQX0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech07" aria-labelledby="tech07-tab" role="tabpanel">
+                      <div id="headingtech07">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech07" aria-expanded="false" aria-controls="collapsetech07"> Hands segmentation
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech07" aria-labelledby="headingtech07" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Hands segmentation
+                              </h2>
+                              <p> Apply robust real-time hand detection to create interactive game experiences and gesture-based interfaces. Provide virtual try-on services for jewellery and accessories. 
+                              </p>
+                              <p><a class="read-more" href="/hands-segmentation">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-hands-segmentation">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech08" aria-labelledby="tech08-tab" role="tabpanel">
+                      <div id="headingtech08">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech08" aria-expanded="false" aria-controls="collapsetech08"> Beautification
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech08" aria-labelledby="headingtech08" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Beautification
+                              </h2>
+                              <p> Let customers look good in the camera so that they have a good customer experience. Fix camera distortions and make beautification available on a wide range of devices. 
+                              </p>
+                              <p><a class="read-more" href="/beautification">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-beautification">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech09" aria-labelledby="tech09-tab" role="tabpanel">
+                      <div id="headingtech09">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech09" aria-expanded="false" aria-controls="collapsetech09"> Eyes segmentation
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech09" aria-labelledby="headingtech09" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Eyes segmentation
+                              </h2>
+                              <p> Apply robust eye detection in biometry, medical research and smart human-computer interaction solutions. Get accurate extraction and measurement of eye features like the center of the pupil, iris radius, and sclera.
+                              </p>
+                              <p><a class="read-more" href="/eyes-segmentation">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a><a class="btn btn-primary btn-brand btn-watch-video" href="#" data-video="https://www.youtube.com/embed/hoxu8VWvORI?rel=0"> <span>Watch video</span></a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-eye-segmentation">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hoxu8VWvORI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech10" aria-labelledby="tech10-tab" role="tabpanel">
+                      <div id="headingtech10">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech10" aria-expanded="false" aria-controls="collapsetech10"> Background separation
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech10" aria-labelledby="headingtech10" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Background separation
+                              </h2>
+                              <p> Remove backgrounds in real time to change them into the scenery of your choice. Apply static and animated textures during a live video call or photo/video shoot.
+                              </p>
+                              <p><a class="read-more" href="/background-separation">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a><a class="btn btn-primary btn-brand btn-watch-video" href="#" data-video="https://www.youtube.com/embed/uj0t-WD1XqM?rel=0"> <span>Watch video</span></a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-separation-from-bg">
+                                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uj0t-WD1XqM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tech-content-item tab-pane fade" id="tech11" aria-labelledby="tech11-tab" role="tabpanel">
+                      <div id="headingtech11">
+                        <button class="btn btn-link btn-tech-mobile" type="button" data-toggle="collapse" data-target="#collapsetech11" aria-expanded="false" aria-controls="collapsetech11"> Heart rate detection
+                        </button>
+                      </div>
+                      <div class="tech-content-frame collapse" id="collapsetech11" aria-labelledby="headingtech11" data-parent="#technologiesContent">
+                        <div class="tech-content-holder">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <h2> Heart rate detection
+                              </h2>
+                              <p> Enable a contact-free heartbeat sensor on your device.  Detect viewers’ responses to commercials by measuring their heart rate via a camera in real time.
+                              </p>
+                              <p><a class="read-more" href="/heart-rate-detection">Read more</a></p>
+                              <div class="btn-holder"><a class="btn btn-primary btn-brand" href="/request-sdk-demo">Try It</a><a class="btn btn-outline-light btn-brand tech-download" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF</a>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="tech-video">
+                                <div class="brand-holder">
+                                  <div class="brand-decor-content">
+                                    <div class="video-holder embed-responsive embed-responsive-16by9 video-pulse-detection">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="tech-download-holder"><a class="btn btn-outline-light tech-download-mobile" href="assets/files/Banuba-amazing_computer_vision_technology.pdf" target="_blank" download>Download PDF Presentation</a></div>
+            </div>
+          </section>
+          <section class="section section-why-us">
+            <h1 class="section-title" data-aos="fade-right" data-aos-duration="1000">Why Us?</h1>
+            <ul class="content-list two-col">
+                  <li data-aos="fade-up"><strong class="content-list-title">±90° angles, 360° rotation </strong><span class="content-list-text">   Recognize and capture 3D images in any lighting and without face loss.</span>
+                  </li>
+                  <li data-aos="fade-up"><strong class="content-list-title">Mobile optimized</strong><span class="content-list-text">   Run neural networks on mobile devices. </span>
+                  </li>
+                  <li data-aos="fade-up"><strong class="content-list-title">Optimal 86 landmarks</strong><span class="content-list-text">   Achieve excellent results using the right balance between speed and quality of facial recognition. </span>
+                  </li>
+                  <li data-aos="fade-up"><strong class="content-list-title">All platforms &amp; devices</strong><span class="content-list-text">   Reach customers on any device or platform – iOS, Android, or Windows.</span>
+                  </li>
+                  <li data-aos="fade-up"><strong class="content-list-title">Genetic algorithm</strong><span class="content-list-text">   Build, train and deploy a fully-functional neural network even with a small dataset. </span>
+                  </li>
+                  <li data-aos="fade-up"><strong class="content-list-title">HD resolution support</strong><span class="content-list-text">   Show the sharpest image possible.</span>
+                  </li>
+                  <li data-aos="fade-up"><strong class="content-list-title">Jitter-low image</strong><span class="content-list-text">   Get a &quot;clean&quot; image with our patented anti-jitter algorithm that reduces camera jitter and auto adjusts lighting. </span>
+                  </li>
+                  <li data-aos="fade-up"><strong class="content-list-title">No 3rd party patents</strong><span class="content-list-text">   Build a seamless and consistent experience with Banuba technology.</span>
+                  </li>
+            </ul>
+          </section>
+          <section class="section section-clients">
+            <h1 class="section-title" data-aos="fade-right" data-aos-duration="1000">Our clients</h1>
+            <div class="logo-list" data-aos="zoom-in-up" data-aos-duration="1000"><a href="https://itunes.apple.com/ru/developer/camera-first/id1294337163?mt=8" target="_blank"><img src="assets/logos/camera-first@2x.png" alt="Camera First"></a><a class="mojicam-logo" href="https://itunes.apple.com/ru/app/mojicam-new-personal-emoji/id1294337164?mt=8"><img src="assets/logos/mojicam@2x.png" alt="MojiCam"></a><a href="https://itunes.apple.com/bj/app/banuba-live-face-filters-app/id1205399556?mt=8" target="_blank"><img src="assets/logos/banuba@2x.png" alt="Banuba"></a><a href="https://readtoplay.io/" target="_blank"><img src="assets/logos/nicola@2x.png" alt="Nikola"></a></div>
+            <div class="row promo-baner">
+              <div class="col-lg-7">
+                <h1 class="section-title d-lg-none">Meet Nicola</h1><img class="promo-baner-img" srcset="assets/images/homepage/nicola-app.png, assets/images/homepage/nicola-app@2x.png 2x" src="assets/images/homepage/nicola-app.png" alt="Nicola" width="100%" height="auto" data-aos="zoom-in-right">
+              </div>
+              <div class="col-lg-5">
+                <div class="promo-baner-description">
+                  <h1 class="section-title d-none d-lg-block" data-aos="fade-right" data-aos-duration="1000">Meet Nicola</h1>
+                  <div data-aos="fade-right" data-aos-duration="1000">
+                    <h2>Wise Parental Control Solution</h2>
+                    <p>Motivate children to read daily by their natural desire to play.</p>
+                    <p>Schedule reading and game time. Choose what apps to block and for how long. Your children will unlock them only by reading.</p>
+                    <div class="btn-holder"><a class="btn btn-primary btn-brand" href="//readtoplay.io" target="_blank">Learn More</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section section-team" data-aos="zoom-in-up" data-aos-duration="1000">
+            <h1 class="section-title text-center" data-aos="fade-up">Our Team</h1>
+            <div class="team js-team-slider team-slider">
+              <div class="team-member">
+                <div class="team-member-photo-frame">
+                  <div class="team-member-photo"><img srcset="assets/images/team/DO-x1.png, assets/images/team/DO-x2.png 2x" src="assets/images/team/DO-x1.png" alt="Dmitry Ogievich photo"></div>
+                </div>
+                <h3 class="team-member-name">Dmitry Ogievich</h3><span class="team-member-position">CEO Banuba Belarus</span>
+              </div>
+              <div class="team-member">
+                <div class="team-member-photo-frame">
+                  <div class="team-member-photo"><img srcset="assets/images/team/MB-x1.png, assets/images/team/MB-x2.png 2x" src="assets/images/team/MB-x1.png" alt="Mikhail Boiko photo"></div>
+                </div>
+                <h3 class="team-member-name">Mikhail Boiko</h3><span class="team-member-position">Director of Business Development</span><a class="team-member-link" href="https://www.linkedin.com/in/mikhail-boiko-98a86a13" target="_blank"> <img class="ico" src="assets/icons/social/linkedin.svg" width="12" height="12">Contact me</a>
+              </div>
+              <div class="team-member">
+                <div class="team-member-photo-frame">
+                  <div class="team-member-photo"><img srcset="assets/images/team/AS-x1.png, assets/images/team/AS-x2.png 2x" src="assets/images/team/AS-x1.png" alt="Anton Liskevich photo"></div>
+                </div>
+                <h3 class="team-member-name">Alexey Sokolsky</h3><span class="team-member-position">СТО</span>
+              </div>
+              <div class="team-member">
+                <div class="team-member-photo-frame">
+                  <div class="team-member-photo"><img srcset="assets/images/team/AL-x1.png, assets/images/team/AL-x2.png 2x" src="assets/images/team/AL-x1.png" alt="Anton Liskevich photo"></div>
+                </div>
+                <h3 class="team-member-name">Anton Liskevich</h3><span class="team-member-position">Product Manager</span>
+              </div>
+              <div class="team-member">
+                <div class="team-member-photo-frame">
+                  <div class="team-member-photo"><img srcset="assets/images/team/AT-x1.png, assets/images/team/AT-x2.png 2x" src="assets/images/team/AT-x1.png" alt="Alexey Tulia photo"></div>
+                </div>
+                <h3 class="team-member-name">Alexey Tulia</h3><span class="team-member-position">Head of SDK team</span>
+              </div>
+            </div>
+            <div class="decor-triangle-line"></div>
+          </section>
+        </div>
+        <section class="section section-instagram" data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="heading">
+            <h1 class="section-title text-center"> 
+              <div>Our Instagram Tag</div><span class="text-brand">#banuba</span>
+            </h1>
+            <div class="section-text">Install <a class="link" href="https://play.google.com/store/apps/details?id=com.banuba.camera&amp;hl=en_US" target="_blank">Banupa App</a>, take a photo and upload  in&nbsp;instagram with hashtag #banuba</div>
+          </div>
+          <div class="photo-list">
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-04.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-13.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-01.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-02.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-07.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-18.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-20.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-11.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-10.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-15.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-16.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-08.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-19.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-05.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-03.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-21.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-09.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-12.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-06.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-14.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+            <div class="photo-list-col">
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-17.jpg" alt="photo from instagram"></div>
+                  </div>
+                  <div class="photo">
+                    <div class="photo-frame"><img src="assets/images/instagram/image-18.jpg" alt="photo from instagram"></div>
+                  </div>
+            </div>
+          </div>
+        </section>
+        <div class="container-fluid">
+          <div data-aos="fade-right">
+                <section class="section section-contact">
+                  <div class="brand-holder">
+                    <div class="brand-decor-content">
+                      <div class="box bg-secondary contact-box-max">
+                        <div id="contact-section">
+                          <div class="contact-form-holder">
+                            <div class="row align-items-center">
+                              <div class="col-lg-7">
+                                <div class="form-heading">
+                                  <h1 class="section-title section-title-white">Banuba can transform your&nbsp;business</h1>
+                                  <p>Just write your email and we will answer you</p>
+                                </div>
+                                <form class="form-inline contact-form form-light" action="#">
+                                  <div class="form-group">
+                                    <div class="form-control-holder">
+                                      <input class="form-control mr-2 js-contact-email" type="email" placeholder="Please enter your E-mail">
+                                      <div class="invalid-feedback">Please enter a valid E-mail address</div>
+                                    </div>
+                                    <button class="btn btn-outline-light js-email-submit" type="submit">Send</button>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="col-md-5 d-none d-lg-block"><img class="img-fluid" src="assets/images/contact/step-up.svg"></div>
+                            </div>
+                          </div>
+                          <div class="contact-success">
+                            <div class="row">
+                              <div class="col-lg-7">
+                                <h1 class="section-title section-title-white">Successful sending!</h1>
+                                <p>Thanks for your email.  </p>
+                                <p>We will contact you as soon as possible.</p>
+                              </div>
+                              <div class="col-md-5 d-none d-lg-block"><img class="img-fluid" src="assets/images/contact/success-hand.svg"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+          </div>
+        </div>
+        <div class="modal fade modal-video" id="modalTechVideo" tabindex="-1" role="dialog" aria-labelledby="modalError" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modal-body">
+                <div class="js-video-tech embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="decor-triangle-line"></div>
+          <div class="footer-info-holder">
+            <div class="footer-info">
+              <div class="d-none d-md-block">
+                <div class="footer-logo"><a href="/"><img src="assets/logos/logo-banuba.svg" width="160" height="auto" alt="BANUBA"></a></div>
+                <p>Build smart apps easily with&nbsp;FaceAR&nbsp;SDK</p>
+              </div>
+              <div class="social-list"><a href="https://www.linkedin.com/company/banuba-development?originalSubdomain=ru" target="_blank"><img src="assets/icons/social/linkedin.svg" alt="linkedin" width="22" height="22"></a><a href="https://www.facebook.com/banubadevelopment/" target="_blank"><img src="assets/icons/social/facebook.svg" alt="facebook" width="12" height="21"></a><a href="https://twitter.com/BanubaFaceAR?lang=en" target="_blank"><img src="assets/icons/social/twitter.svg" alt="twitter" width="24" height="20"></a><a href="https://www.youtube.com/channel/UCnXZnhDdFv-1VC47PCY9Ptw" target="_blank"><img src="assets/icons/social/youtube.svg" alt="youtube" width="26" height="17"></a></div>
+            </div>
+            <div class="footer-info-links sdk-links">
+              <h2 class="footer-title">SDK demo</h2>
+              <ul class="footer-list">
+                <li><a href="/face-tracking"> Face tracking and segmentation</a></li>
+                <li><a href="/hair-segmentation"> Hair segmentation</a></li>
+                <li><a href="/action-units-detection"> Action units detection (Avatar)</a></li>
+                <li><a href="/occlusion-detection"> Occlusion detection</a></li>
+                <li><a href="/glasses-detection"> Glasses detection</a></li>
+                <li><a href="/eye-tracking"> Eye tracking</a></li>
+                <li><a href="/hands-segmentation"> Hands segmentation</a></li>
+                <li><a href="/beautification"> Beautification</a></li>
+                <li><a href="/eyes-segmentation"> Eyes segmentation</a></li>
+                <li><a href="/background-separation"> Background separation</a></li>
+                <li><a href="/heart-rate-detection"> Heart rate detection</a></li>
+              </ul>
+            </div>
+            <div class="footer-info-links">
+              <h2 class="footer-title">Company</h2>
+              <ul class="footer-list">
+                <li><a href="/request-sdk-demo">Request&nbsp;demo</a></li>
+              </ul>
+            </div>
+            <div class="footer-info-links">
+              <h2 class="footer-title">Policy</h2>
+              <ul class="footer-list">
+                <li><a href="/terms" target="_blank">Terms&nbsp;of&nbsp;use</a></li>
+                <li><a href="/policy" target="_blank">Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copy"><span class="copyright">&copy; 2018 Banuba Development. <br class="d-block d-md-none"> All rights reserved.</span><span>Built with <span class="heart">🧡 </span>in Minsk</span></div>
+        </div>
+      </footer>
+      <div class="modal fade" id="modalSuccessSend" tabindex="-1" role="dialog" aria-labelledby="modalError" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-content-xl" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Successful sending!</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center">
+                <div class="col-sm-4"><img class="img-fluid img-center" src="assets/images/contact/success-hand.svg"></div>
+                <div class="col-sm-8">
+                  <p> Thanks for your email. </p>
+                  <p> We will contact you as soon as possible.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalError" tabindex="-1" role="dialog" aria-labelledby="modalError" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Error</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p> Sorry, problem occured </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><script src="js/jquery.min.js"></script>
+    <script>$(window).on('load', function () {
+  $preloader = $('.preloader-area'),
+  
+  setTimeout(function () {
+    $preloader.delay(350).fadeOut('slow');
+  }, 2000);
+});
+    </script><script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js?v=1.0.92"></script>
+  </body>
+</html>

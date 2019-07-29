@@ -1,0 +1,37 @@
+extends base/layout
+
+block main-content
+	- var currentCount = 10
+	+sdk-description(currentCount)
+
+block sdkDescriptionContent
+	.section-content-block.mw-90
+		p 
+			= currentItem.preview
+		p The facial blood circulation involves changes in skin color which can’t be seen with a naked eye. Our technology detects, analyzes and processes them robustly and in real time. 
+		p It provides the same level of accuracy as with contact-based heartbeat monitoring yet allows more convenient and accessible experience – all you need is a camera and a face.
+	.section-content-block
+		h2 Features
+		ul.content-list
+			li Works using a web or mobile camera
+			li High accuracy
+			li Real-time
+			li Quick and easy to use
+	.section-content-block
+		h2 Use cases
+		.row
+			.col-md-6
+				h3 Research
+				ul.content-list
+					li Identify emotional states and moods 
+					li Detect physiological signals based on heart rate changes when facial expressions are not clear
+
+				h3 Advertising
+				ul.content-list
+					li Measure user’s emotional response to ads or content
+
+			.col-md-6
+				h3 Healthcare
+				ul.content-list
+					li Allow patients to measure their heart rate via a camera 
+					li Power mobile and web healthcare solutions with a heartbeat sensor 

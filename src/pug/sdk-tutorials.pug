@@ -1,0 +1,29 @@
+extends base/layout
+
+append mainVars
+	- page = "sdk-tutorials"
+
+
+block main-content
+	.container-fluid
+		section.section.section-sdk-video-list.section-content
+			+breadcrumbs()
+			
+			h1.section-title SDK Demo
+
+			.row.section-sdk-list
+				+sdk-list(0)
+				+sdk-list(1)
+				+sdk-list(2)
+				//-+sdk-list("//", "Occlusion", "link")
+				+sdk-list(4)
+				+sdk-list(5)
+				//-+sdk-list("//", "Hands segmentation", "link")
+				//-+sdk-list("//", "Beautification", "link")
+				+sdk-list(8)
+				+sdk-list(9)
+
+				//-+sdk-list("//", "Pulse detection", "link")
+
+			
+		include pages/homepage/_section-contact-small

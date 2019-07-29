@@ -1,0 +1,37 @@
+.section-sdk-request {
+
+	.title {
+		font-weight: 400;
+		display: block;
+		margin: 0 0 20px;
+		font-size: 0.9rem;
+		
+		@include media-breakpoint-up(md) {
+			margin: 0 0 44px;
+			font-size: 1.5rem;
+		}
+	}
+
+	form {
+		@include media-breakpoint-up(md) {
+			max-width: 550px;
+		}
+	}
+
+	.contact-form .form-group {
+		max-width: 100%;
+	}
+
+	.btn-holder {
+		
+		@include media-breakpoint-up(md) {
+			padding-top: 15px;
+		}
+
+		.btn {
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
+		}
+	}
+}

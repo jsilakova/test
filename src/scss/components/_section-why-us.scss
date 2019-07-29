@@ -1,0 +1,7 @@
+.section-why-us {
+  padding-bottom: 177px;
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 0;
+  }
+}

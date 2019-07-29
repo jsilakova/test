@@ -1,0 +1,30 @@
+header.header
+	.container-fluid
+		nav.navbar.navbar-dark.navbar-expand-lg
+			a.navbar-brand(href="/")
+				img.logotype(src="assets/logos/logo-banuba.svg" width="86" height="70" alt="BANUBA logotype")
+			a.btn-navigation-open(href="#")
+				span.icon-hamburger
+					span
+					span
+					span
+					span
+
+			.main-navigation
+				ul.navbar-nav
+					if page == 'sdk-tutorials'
+						+menu-item('/sdk-tutorials', 'SDK demo', "active")
+					else
+						+menu-item('/sdk-tutorials', 'SDK demo')
+
+
+					if page == 'technology'
+						+menu-item('/technology', 'Technology', "active")
+					else
+						+menu-item('/technology', 'Technology')
+
+
+					if page == 'request-sdk-demo'
+						+menu-item('/request-sdk-demo', 'Request demo', "active")
+					else
+						+menu-item('/request-sdk-demo', 'Request demo')

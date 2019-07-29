@@ -1,0 +1,36 @@
+extends base/layout
+
+append mainVars
+	- page = "request-sdk-demo"
+
+block main-content
+	.container-fluid
+		section.section.section-content.section-sdk-request
+			+breadcrumbs()
+			
+			h1.section-title Request SDK Demo
+			strong.title Contact us to access a sandbox project
+			form.reguest-sdk-form.form-dark.contact-form(action="#")
+
+				.form-group.form-control-holder
+					label(for="user-name") Your name *
+					input.form-control.form-control-lg.js-contact-name(type="text", id="user-name", placeholder="", required)
+					.invalid-feedback Please enter your name
+
+				.form-group.form-control-holder
+					label(for="user-email") Email *
+					input.form-control.form-control-lg.js-contact-email(type="text", id="user-email", placeholder="", required)
+					.invalid-feedback Please enter your email
+
+				.form-group
+					label(for="user-company") Company
+					input.form-control.form-control-lg.js-company-name(type="text", id="user-company", placeholder="")
+
+				.form-group
+					label(for="user-message") Message
+					textarea.form-control.area-max.js-contact-message(id="user-message", placeholder="", rows="3")
+				.btn-holder
+					button.btn.btn-primary.btn-brand.btn-lg.js-email-submit(type="submit") Request Demo
+	include components/_modal-success
+	include components/_modal-error
+

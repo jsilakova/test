@@ -1,0 +1,180 @@
+.box {
+	padding: 28px 20px 30px;
+  font-size: 0.75rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 6% 8%;
+    font-size: 1.2rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom:100px;
+  }
+
+  h1 {
+    @include media-breakpoint-down(lg) {
+      font-size: 2.3rem;
+      padding-top: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+      padding-top: 10px;
+    }
+  }
+
+  .section-title {
+    margin-bottom:45px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .contact-form {
+
+    .form-group {
+      @include media-breakpoint-up(lg) {
+        flex-wrap: nowrap;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.contact-success {
+	display: none;
+}
+
+.contact-form {
+
+
+  .form-control {
+    width: 100%;
+    margin: 0;
+    
+    @include media-breakpoint-up(md) {
+      padding: 26px .75rem;
+    }
+  }
+
+
+  &-max {
+    @include media-breakpoint-up(md) {
+      margin: 0;
+    }
+  }
+
+  .form-group {
+    max-width: 530px;
+    width: 100%;
+    align-items: flex-start;
+
+    .form-control-holder {
+      flex: auto;
+      margin: 0 15px 0 0;
+
+      @include media-breakpoint-down(sm) {
+        margin: 0 0 13px;
+        margin-right: 0 !important;
+      }
+    }
+
+    .btn {
+      width:160px;
+    }
+
+    &,
+    .form-control-holder,
+    .btn {
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contact-box-min {
+
+  @include media-breakpoint-up(md) {
+    padding: 4.6% 5.5%;
+  }
+
+  .contact-form-holder {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      align-items: center;
+      font-size:1rem;
+    }
+  }
+
+  .section-title {
+    padding: 0;
+    font-weight:400;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.65rem;
+      margin: 0 0 10px;
+    }
+   
+    
+    &:after {
+      display: none;
+    }
+  }
+
+  .form-heading {
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 10px;
+      width:50%;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .contact-form {
+   
+    
+    @include media-breakpoint-up(lg) {
+      width:50%;
+    }
+
+    .form-control-holder {
+      @include media-breakpoint-down(lg) {
+        margin: 0;
+      }
+    }
+    
+
+    .form-group {
+      max-width: 100%;
+      
+      @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+        
+        .form-control {
+          margin-bottom: 15px;
+        } 
+      }
+    }
+
+    .btn {
+      @include media-breakpoint-up(lg) {
+        width: 186px;
+      }
+    }
+  }
+}

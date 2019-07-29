@@ -1,0 +1,162 @@
+.section-video {
+
+
+  &.section {
+		padding: 60px 0 245px 49px;
+		
+		@include media-breakpoint-down(lg) {
+			padding: 0 0 90px;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 0 0 30px;
+		}
+	}
+
+	.brand-frame:before {
+		width: 70%;
+		top: -23%;
+    	right: -15%;
+    	height: 80%;
+    	
+    	@include media-breakpoint-up(lg) {
+			width: 44%;
+		    top: -12%;
+		    right: -3%;
+		    height: 65%;
+		}
+	}
+}
+
+.section-promo {
+
+	&.section {
+		padding: 305px 0 50px;
+		
+		@include media-breakpoint-down(lg) {
+			padding: 170px 0 60px;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 130px 0 60px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 90px 0 32px;
+			font-size: 0.8rem;
+		}
+	}
+
+	
+
+	@include media-breakpoint-up(md) {
+		font-size: 1.2rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		font-size: 1.75rem;
+	}
+
+	h1 {
+		margin: 0 0 44px;
+		padding-top: 5%;
+		
+		@include media-breakpoint-down(md) {
+			margin: 0 0 30px;
+			padding-top: 0;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin: 0 0 15px;
+		}
+	}
+
+	p {
+		margin: 0 0 54px;
+		max-width:630px;
+
+		@include media-breakpoint-down(md) {
+			margin: 0 0 25px;
+			max-width: 100%;
+		}
+	}
+
+	.btn-holder {
+		margin: 0 0 130px;
+		display: flex;
+
+		@include media-breakpoint-down(md) {
+			margin: 0;
+    		justify-content: stretch;
+		}
+		
+		.btn {
+			margin: 0 40px 20px 0;
+
+			@include media-breakpoint-down(sm) {
+				margin: 0 24px 0 0;
+				width:45%;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-img {
+		height: auto;
+		display: block;
+    	margin: -10% 0 0;
+    	width: 100%;
+    	
+    	@include media-breakpoint-up(xl) {
+    		margin: -27% 0 0 -14%;
+    		width: auto;
+    	}
+	}
+}
+
+//- universal classes for all video
+
+.video-holder {
+	background: $brand-gradient;
+	background-position: 50% 0;
+    background-size: cover;
+}
+.video-face-tracking {
+	background-image: url("../assets/video/poster/video-face-tracking.jpg");
+}
+.video-hair-segmentation {
+	background-image: url("../assets/video/poster/video-hair-segmentation.jpg");
+}
+.video-action-units {
+	background-image: url("../assets/video/poster/video-action-units.jpg");
+}
+.video-glasses-detection {
+	background-image: url("../assets/video/poster/video-glasses-detection.jpg");
+}
+.video-eye-gaze-tracking {
+	background-image: url("../assets/video/poster/video-eye-gaze-tracking.jpg");
+}
+.video-eye-segmentation {
+	background-image: url("../assets/video/poster/video-eye-segmentation.jpg");
+}
+.video-separation-from-bg {
+	background-image: url("../assets/video/poster/video-separation-from-bg.jpg");
+}
+.video-hands-segmentation {
+	background-image: url("../assets/video/poster/video-hands-segmentation.jpg");
+}
+.video-beautification {
+	background-image: url("../assets/video/poster/video-beautification.jpg");
+}
+.video-occlusion {
+	background-image: url("../assets/video/poster/video-occlusion.jpg");
+}
+.video-pulse-detection {
+	background-image: url("../assets/video/poster/video-pulse-detection.jpg");
+}
+.video-banuba {
+	background-image: url("../assets/video/poster/video-banuba.jpg");
+}

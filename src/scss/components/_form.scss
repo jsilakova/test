@@ -1,0 +1,81 @@
+.form-control {
+  background-clip: inherit;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $brand-text-mobile;
+    padding: 8px 10px;
+  }
+
+  &-lg {
+  	@include media-breakpoint-down(md) {
+  		padding: 10px;
+  	}
+  }
+}
+
+label {
+	opacity: 0.6;
+	
+	@include media-breakpoint-up(md) {
+		margin-bottom:15px; 
+	}
+}
+
+.form-group {
+	@include media-breakpoint-up(md) {
+		margin-bottom: 45px; 
+	}
+}
+
+//validation
+
+.form-control-holder {
+	position: relative;
+	
+	.invalid-feedback {
+		font-size: 0.8rem;
+		
+	}
+	
+	&.error {
+
+		.invalid-feedback {
+			display: block;
+			
+			@include media-breakpoint-up(md) {
+			    position: absolute;
+			    top:100%;
+			    left:0;
+			    text-align: right;
+			 }
+		}
+	}
+}
+
+.box {
+	.invalid-feedback {
+		color: $white;
+	}
+}
+
+.form-dark {
+	.form-control {
+		background-color: transparent;
+		color:$white;
+	}
+}
+
+.area-max {
+	height: 200px;
+	
+	@include media-breakpoint-up(md) {
+	    height: 315px;
+	 }
+}
+
+.error {
+	
+	.form-control {
+		border-color: $red;
+	}
+}

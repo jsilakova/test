@@ -1,0 +1,159 @@
+.section-team {
+	.section-title {
+		
+		@include media-breakpoint-down(sm) {
+			text-align:left !important;
+
+			&:after {
+				left:0;
+				transform: none;
+			}
+		}
+	}
+
+	.decor-triangle-line {
+		margin-bottom: 0;
+	}
+}
+
+.team {
+	padding: 0 0 110px;
+
+	@include media-breakpoint-down(md) {
+		font-size: .75rem;
+		padding: 0 0 30px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		width: 280px;
+		padding: 0;
+		overflow: hidden;
+		margin: 0 auto;
+		display:block;
+		padding-top: 50px;
+	}
+
+	&-member {
+		width: 280px;
+		display: flex;
+		flex-direction: column;
+		align-items: center ;
+		justify-content: flex-start;
+		color: #b7b8b7;
+		
+		@include media-breakpoint-up(md) {
+			width: 33.3%;
+			padding-top: 80px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 100px;
+		}
+	}
+
+	.slick-track {
+		@include media-breakpoint-up(md) {
+			flex-wrap: wrap;
+		}
+	}
+
+	
+
+	.slick-track,
+	.slick-list {
+		@include media-breakpoint-up(md) {
+			width: 100% !important;
+			transform: translate3d(0,0,0)!important;
+			justify-content: center; 
+		}	
+	}
+
+	.slick-track .slick-slide {
+		align-items: center ;
+		justify-content: stretch;
+	}
+
+	.slick-list {
+		@include media-breakpoint-down(md) {
+			margin-bottom: 26px;
+		}
+	}
+
+
+
+	&-member-photo {
+		background: #fff;
+		overflow: hidden;
+		width: 100%;
+		max-width: 220px;
+		position: relative;
+
+		@include media-breakpoint-down(lg) {
+			max-width: 160px;
+		}
+
+		@include media-breakpoint-down(md) {
+			max-width: 140px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			max-width: 130px;
+		}
+		
+		&-frame {
+			@include brand-border(2px);
+			transform: rotate(45deg);
+			padding: 18px;
+			background: $brand-bg-color;
+			margin: 0 0 85px;
+			
+			@include media-breakpoint-down(lg) {
+				margin: 0 0 53px;
+				padding: 12px;
+			}
+
+			@include media-breakpoint-down(md) {
+				border-width:2px;
+				padding: 8px;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			transform: rotate(-45deg) scale(1.42);
+		}
+	}
+
+	&-member-name {
+		color:#fff;
+		text-align: center;
+		font-size: 1.4rem;
+
+		@include media-breakpoint-down(lg) {
+			font-size: 0.85rem;
+			margin: 0 0 8px;
+		}
+	}
+
+	&-member-position {
+		text-align:center;
+		margin-bottom: 8px;
+	}
+
+	&-member-link {
+		text-decoration:underline;
+		color: inherit;
+		display:inline-flex;
+		align-items:center;
+
+		&:hover {
+			text-decoration:none;
+			color: inherit;
+		}
+
+		.ico {
+			margin-right: 5px;
+			opacity: 0.8;
+		}
+	}
+}

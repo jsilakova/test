@@ -1,0 +1,13 @@
+extends base/layout
+
+block main-content
+	- var currentCount = 3
+	+sdk-description(currentCount)
+
+block sdkDescriptionContent
+	.section-content-block.mw-90
+		p 
+			= currentItem.preview
+		p Banuba’s occlusion detection technology allows for the camera not to lose the face even if users cover their faces with scarves, glasses, hair, or make gestures in front of the face.
+		p It results in the quality performance of apps that provide face filters, masks and effects – occlusion doesn't break the experience. 
+

@@ -1,0 +1,159 @@
+.btn {
+
+	@include media-breakpoint-down(sm) {
+		font-size: $brand-text-mobile;
+		padding: 9px 15px;
+	}
+
+	&.btn-brand  {
+		position:relative;
+		margin: 0 15px 15px 0;
+		transition: none;
+		box-shadow: none !important;
+		border: 0;
+		padding: 11px 17px;
+		
+		@include media-breakpoint-up(lg) {
+			padding: 15px 30px;
+		}
+		
+		&:before {
+			content:'';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: -8px;
+			right: -7px;
+			z-index:-1;
+
+
+			@include media-breakpoint-down(md) {
+				border-width:1px !important;
+				height: 102%;
+				bottom: -6px;
+				right: -5px;
+			}
+
+			@include media-breakpoint-down(sm) {
+				display:none;
+			}
+		}
+
+		&.border-sm-down {
+			&:before {
+				display:block;
+			}
+		}
+
+		&.btn-lg {
+			padding: 9px 17px;
+			
+			@include media-breakpoint-up(lg) {
+				padding: 13px 40px;
+			}
+		}
+	}
+
+	&-primary.btn-brand {
+		background: $brand-gradient;
+		transition: background .2s linear;
+		
+		&:before {
+			@include brand-border(2px);
+		}
+
+		&:hover,
+		&:active,
+		&:focus,
+		&:not(:disabled):not(.disabled):active, 
+		&:not(:disabled):not(.disabled).active {
+			background: $brand-gradient-hover;
+		}
+	}
+
+	&-secondary:before {
+		border: 2px solid $secondary;
+	}
+
+	&-outline-light.btn-brand {
+		border: 2px solid $white;
+		background: $brand-bg-color;
+		transition: background .15s linear, color .15s linear;
+		
+		&:before {
+			border: 2px solid $white;
+		}
+
+		&:hover,
+		&:focus {
+			background: $white;
+			color: $black;
+		}
+	}
+
+	&.btn-outline-primary {
+		position:relative;
+		background: $brand-bg-color;
+	    background-clip: padding-box;
+	    border: 0;
+	    transition: $btn-transition;
+	    margin: 2px;
+
+		&:after {
+			position: absolute;
+		    top: -2px; 
+		    bottom: -2px;
+		    left: -2px; 
+		    right: -2px;
+		    background: $brand-gradient;
+		    content: '';
+		    z-index: -1;
+		}
+
+		span {
+			position:relative;
+			z-index:2;
+			@extend .text-brand;
+		}
+		
+		&:hover,
+		&:focus,
+		&:not(:disabled):not(.disabled):active, 
+		&:not(:disabled):not(.disabled).active {
+			background: $brand-gradient;
+			border-color: transparent;
+			box-shadow: none;
+
+			span {
+				background: none;
+				-webkit-text-fill-color:$white;
+				color:#fff;
+			}
+		}
+
+		&.btn-sm.btn-rounded:after {
+			border-radius: 30px;
+		}
+	}
+
+
+	&.btn-secondary {
+		color: $white;
+	}
+
+	&.btn-lg {
+
+		@include media-breakpoint-up(lg) {
+			padding: 13px 40px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: $brand-text-mobile;
+			padding: 9px 15px;
+		}
+	}
+
+	&.btn-sm.btn-rounded {
+		border-radius: 30px;
+	}
+}

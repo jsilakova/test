@@ -1,0 +1,45 @@
+extends base/layout
+
+block main-content
+	- var currentCount = 2
+	+sdk-description(currentCount)
+
+block sdkDescriptionContent
+	.section-content-block.mw-90
+		p 
+			= currentItem.preview
+		p Create users’ 3D avatars that mimic their slightest movements and even micro expressions in real time.
+	.section-content-block
+		h2 Features
+		ul.content-list
+			li Emotional engagement measurement
+			li Six basic emotions (happiness, surprise, sadness, anger, fear and disgust)
+			li Mood detection
+			li Micro expressions
+	.section-content-block
+		h2 Use cases
+		.row
+			.col-md-6
+				h3 Games
+				ul.content-list
+					li Build personal 3D game characters
+					li Control game characters with facial expressions and movements
+				h3 Communication
+				ul.content-list
+					li Use a personal digital avatar in video chats
+					li Create employee avatars for live support
+				h3 Advertisement
+				ul.content-list
+					li Assess ad effectiveness by monitoring emotional responses in real time
+					li Identify feedback and pre-empt negative emotions
+			.col-md-6
+				h3 Smart UI
+				ul.content-list
+					li Design visual effects that respond to facial expressions
+					li Personalize content and interfaces based on emotion recognition
+					li Allow users to interact with the app using mimics
+
+				h3 Healthcare
+				ul.content-list
+					li Deliver online mental health services of an in-person quality
+					li Detect emotional states of patients

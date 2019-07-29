@@ -1,0 +1,40 @@
+extends base/layout
+
+block main-content
+	- var currentCount = 5
+	+sdk-description(currentCount)
+
+block sdkDescriptionContent
+	.section-content-block.mw-90
+		p 
+			= currentItem.preview
+	.section-content-block
+		h2 Features
+		ul.content-list
+			li High degree of precision in eye tracking
+			li Eye states: open/closed
+			li Attention tracking
+			li Eye pupil detection and tracking
+			li Eye blinking
+	.section-content-block
+		h2 Use cases
+		.row
+			.col-md-6
+				h3 Automotive
+				ul.content-list
+					li Detect the driver’s drowsiness and fatigue
+					li Prevent sleeping at the wheel
+				h3 Analytics
+				ul.content-list
+					li Analyze UI perception and draw heat maps
+					li Assess interface and the efficiency of ads
+					li Enable touchless eye-gaze control and interactive responses to user behaviour
+			.col-md-6
+				h3 Healthcare
+				ul.content-list
+					li Track brain activity, diagnose diseases and perform research
+					li Provide assistive technologies for people with disabilities
+				h3 Smart UI
+				ul.content-list
+					li Allow users to interact with the app via eye-gaze and head movements
+					li Reveal and fix UI weaknesses to improve customer satisfaction

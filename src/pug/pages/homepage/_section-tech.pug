@@ -1,0 +1,12 @@
+section.section.section-tech#technology-section
+	h1.section-title(data-aos="fade-right" data-aos-duration="1000") Explore Our Technologies
+	.technologies-nav.nav.js-nav-tabs-autoplay(role="tablist" data-aos="fade-up" data-aos-duration="1000")
+		each item in locals.tech
+			+link-tech(item.title, item.item, item.activeState, item.activeClass, item.dataAos)
+
+	.section-tech-holder#technologiesContent(data-aos="fade-up" data-aos-duration="1000")
+		.tech-content.tab-content.js-tab-content-autoplay
+			each item in locals.tech
+				+tech-content(item.item, item.title, item.link, item.url, item.name, item.activeTab, item.preview)
+		.tech-download-holder
+			a.btn.btn-outline-light.tech-download-mobile(href="assets/files/Banuba-amazing_computer_vision_technology.pdf", target="_blank", download) Download PDF Presentation

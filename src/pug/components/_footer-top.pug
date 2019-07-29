@@ -1,0 +1,35 @@
+.footer-info-holder
+	.footer-info
+		.d-none.d-md-block
+			.footer-logo
+				a(href="/")
+					img(src="assets/logos/logo-banuba.svg" width="160" height="auto" alt="BANUBA")
+			p Build smart apps easily with&nbsp;FaceAR&nbsp;SDK
+		include _social
+
+	.footer-info-links.sdk-links
+		h2.footer-title SDK demo
+		ul.footer-list
+			each item in locals.tech
+				li
+					a(href = item.link) 
+						=item.title
+
+	.footer-info-links
+		h2.footer-title Company
+		ul.footer-list
+			//- li
+				a(href="") Technology
+			//- li
+				a(href="") Quick Technical FAQ
+			li
+				a(href="/request-sdk-demo") Request&nbsp;demo
+
+	
+	.footer-info-links
+		h2.footer-title Policy
+		ul.footer-list
+			li
+				a(href="/terms", target="_blank") Terms&nbsp;of&nbsp;use
+			li
+				a(href="/policy", target="_blank") Policy

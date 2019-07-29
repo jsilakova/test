@@ -1,0 +1,151 @@
+.section-instagram {
+	padding-bottom: 60px;
+	
+	@include media-breakpoint-up(lg) {
+	    padding-bottom: 120px;
+	}
+
+	.section-text {
+		text-align: center;
+		margin: 0 auto 15px;
+		width: 80%;
+		
+		@include media-breakpoint-up(sm) {
+		    width: 50%;
+			max-width: 500px;
+		}
+		
+		@include media-breakpoint-up(lg) {
+		    font-size: 1.2rem;
+		}
+	}
+
+	.heading {
+		padding: 0 15px;
+		margin-bottom: -350px;
+		position: relative;
+		z-index: 2;
+
+		@include media-breakpoint-down(lg) {
+		    margin-bottom: -260px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 40px;
+		}	
+	}
+}
+
+$photoGapTop: 5.5%;
+$photoGapTopMD: 7.5%;
+$photoGap: 30px;
+$photoGapMD: 10px;
+
+.photo-list {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 2600px;
+	padding: 0 15px;
+	position: relative;
+	z-index: 1;
+	height: 1150px;
+	overflow-x: hidden;
+	
+	@include media-breakpoint-down(lg) {
+	   height: 850px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		height: 300px;
+	}
+
+	
+	
+	&-col {
+		width: 290px;
+		position: absolute;
+	    top: 0;
+	    left: 50%;
+	    transform-translate: center;
+	    margin-left: -150px;
+
+		animation: circleGallery 110s linear 0s infinite normal none running;
+		
+		@include media-breakpoint-down(lg) {
+		    width: 200px;
+		    margin-left: -100px;
+		    animation: circleGalleryTablet 110s linear 0s infinite normal none running;
+		    
+		}
+
+
+		@include media-breakpoint-down(sm) {
+			animation-name: circleGalleryMobile;
+			width: 150px;
+			animation-duration: 100s;
+		}
+		
+		&:nth-child(1) {
+			animation-delay: -60s;
+		}
+		&:nth-child(2) {
+			animation-delay: -50s;
+		}
+		&:nth-child(3) {
+			animation-delay: -40s;
+		}
+		&:nth-child(4) {
+			animation-delay: -30s;
+		}
+		&:nth-child(5) {
+			animation-delay: -20s;
+		}
+		&:nth-child(6) {
+			animation-delay: -10s;
+		}
+		&:nth-child(7) {
+			animation-delay: 0;
+		}
+		&:nth-child(8) {
+			animation-delay: -70s;
+		}
+		&:nth-child(9) {
+			animation-delay: -80s;
+		}
+		&:nth-child(10) {
+			animation-delay: -90s;
+		}
+		&:nth-child(11) {
+			animation-delay: -100s;
+		}
+		
+
+	}
+
+	.photo {
+		padding: $photoGapMD;
+		
+		@include media-breakpoint-up(xl) {
+		    padding: $photoGap;
+		}
+
+		&-frame {
+			width: 100%;
+			padding-top: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 5px;
+		}
+	}
+}

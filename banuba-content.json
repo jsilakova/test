@@ -1,0 +1,105 @@
+{
+  "tech": [
+    {
+      "item": "tech01",
+      "title": "Face tracking and segmentation",
+      "link": "/face-tracking",
+      "url": "https://www.youtube.com/embed/o99X_9QNeHk?rel=0",
+      "name": "video-face-tracking",
+      "activeState" : "true",
+      "activeClass": "active",
+      "activeTab": "active show",
+      "preview": "Build ultimately personalized web and mobile solutions based on facial recognition. Let customers experience your business in a whole new way."
+    },
+    {
+      "item": "tech02",
+      "title": "Hair segmentation",
+      "link": "/hair-segmentation",
+      "url": "https://www.youtube.com/embed/XCPFcRA1AO8?rel=0",
+      "name": "video-hair-segmentation",
+      "activeState" : "false",
+      "preview": "Let customers change hairstyles and hair colours at a click to find their perfect look. Boost your consumer satisfaction by offering an easy-to-use hair color changer. "
+    },
+    {
+      "item": "tech03",
+      "title": "Action units detection (Avatar)",
+      "link": "/action-units-detection",
+      "url": "https://www.youtube.com/embed/-Cwf4aljV_E?rel=0",
+      "name": "video-action-units",
+      "activeState" : "false",
+      "preview": "Detect the movements of individual facial muscles and translate them into facial expressions. Track users’ moods and emotions."
+    },
+    {
+      "item": "tech04",
+      "title": "Occlusion detection",
+      "link": "/occlusion-detection",
+      "url": "none",
+      "name": "video-occlusion",
+      "activeState" : "false",
+      "preview": "Apply robust facial recognition and tracking that works even with partial visibility of the face. Our technology supports occlusion up to 50%."
+    },
+    {
+      "item": "tech05",
+      "title": "Glasses detection",
+      "link": "/glasses-detection",
+      "url": "https://www.youtube.com/embed/A3qlQU4dvzQ?rel=0",
+      "name": "video-glasses-detection",
+      "activeState" : "false",
+      "preview": "Power your analytics and marketing strategy with real-time robust glasses detection. Identify users who wear glasses and approach them with relevant and timely offers. "
+    },
+    {
+      "item": "tech06",
+      "title": "Eye tracking",
+      "link": "/eye-tracking",
+      "url": "https://www.youtube.com/embed/0Xj3vz6uQX0?rel=0",
+      "name": "video-eye-gaze-tracking",
+      "activeState" : "false",
+      "preview": "Get insight into your customers' visual attention. Track gaze direction with subpixel accuracy and detect precise eye movements to understand your users’ behaviour. "
+    },
+    {
+      "item": "tech07",
+      "title": "Hands segmentation",
+      "link": "/hands-segmentation",
+      "url": "none",
+      "name": "video-hands-segmentation",
+      "activeState" : "false",
+      "preview": "Apply robust real-time hand detection to create interactive game experiences and gesture-based interfaces. Provide virtual try-on services for jewellery and accessories. "
+    },
+    {
+      "item": "tech08",
+      "title": "Beautification",
+      "link": "/beautification",
+      "url": "none",
+      "name": "video-beautification",
+      "activeState" : "false",
+      "preview": "Let customers look good in the camera so that they have a good customer experience. Fix camera distortions and make beautification available on a wide range of devices. "
+    },
+    {
+      "item": "tech09",
+      "title": "Eyes segmentation",
+      "link": "/eyes-segmentation",
+      "url": "https://www.youtube.com/embed/hoxu8VWvORI?rel=0",
+      "name": "video-eye-segmentation",
+      "activeState" : "false",
+      "preview": "Apply robust eye detection in biometry, medical research and smart human-computer interaction solutions. Get accurate extraction and measurement of eye features like the center of the pupil, iris radius, and sclera."
+    },
+    {
+      "item": "tech10",
+      "title": "Background separation",
+      "link": "/background-separation",
+      "url": "https://www.youtube.com/embed/uj0t-WD1XqM?rel=0",
+      "name": "video-separation-from-bg",
+      "activeState" : "false",
+      "preview": "Remove backgrounds in real time to change them into the scenery of your choice. Apply static and animated textures during a live video call or photo/video shoot."
+    },
+    {
+      "item": "tech11",
+      "title": "Heart rate detection",
+      "link": "/heart-rate-detection",
+      "url": "none",
+      "name": "video-pulse-detection",
+      "activeState" : "false",
+      "preview": "Enable a contact-free heartbeat sensor on your device.  Detect viewers’ responses to commercials by measuring their heart rate via a camera in real time."
+    }
+  ]
+}

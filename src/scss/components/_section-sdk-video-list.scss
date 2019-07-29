@@ -1,0 +1,33 @@
+$gapMdSdk:90px;
+$gapSmSdk:30px;
+
+.section-sdk-video-list {
+	.section-sdk-list {
+		margin-bottom: -$gapMdSdk;
+	
+		@include media-breakpoint-down(md) {
+			margin-bottom: -$gapSmSdk;
+		}
+	}
+
+	.card {
+		margin-bottom: $gapMdSdk;
+	
+		@include media-breakpoint-down(lg) {
+			margin-bottom: $gapSmSdk;
+		}
+	}
+	
+	.row {
+
+		@include media-breakpoint-up(xl) {
+			.col-md-6:nth-child(even) {
+				padding-left: 30px;
+			}
+			.col-md-6:nth-child(odd) {
+				padding-right: 30px;
+			}
+		}
+	}
+}
+

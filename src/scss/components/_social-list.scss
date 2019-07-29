@@ -1,0 +1,15 @@
+.social-list {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	display: inline-flex;
+	align-items: center;
+	
+	img {
+		display: block;
+	}
+	
+	a:not(:last-child) {
+		margin: 0 25px 0 0;
+	}
+}

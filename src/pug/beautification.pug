@@ -1,0 +1,55 @@
+extends base/layout
+
+block main-content
+	- var currentCount = 7
+	+sdk-description(currentCount)
+
+block sdkDescriptionContent
+	.section-content-block.mw-90
+		p 
+			= currentItem.preview
+		p Enhance faces and apply modification effects in real time. Allow users to control the level of beautification and emphasize their natural beauty. 
+	.section-content-block
+		h2 Features
+		.row
+			.col-md-6
+				ul.content-list
+					li Skin smoothing
+					li Eye emphasis
+					li Skin tone correction
+					li Whitening of eyes and teeth
+					li Correction of face shape (make it slimmer, wider, increase/decrease eye size, change the shape of the nose and head proportions)
+					li Change hair color
+			.col-md-6
+				ul.content-list
+					li Improve face symmetry
+					li Shape and color eyebrows
+					li Correction of lip shape
+					li Virtual makeup
+					li Face morphing
+	.section-content-block
+		h2 Use cases
+		.row
+			.col-md-6
+				h3 Communication
+				ul.content-list
+					li Make video chatting more comfortable and enjoyable by enhancing the user’s looks
+
+				h3 Plastic surgery
+				ul.content-list
+					li View the effect of plastic surgeries, improve customer service and decrease patient’s spontaneous decisions
+
+				h3 E-commerce
+				ul.content-list
+					li Enhance customers’ looks during the virtual try-on experience
+
+			.col-md-6
+				h3 Skincare/cosmetics
+				ul.content-list
+					li Apply makeup and choose products that suit best
+					li View the effect from skin care/treatment products
+				
+				h3 Camera technologies
+				ul.content-list
+					li Make selfies more attractive yet natural looking
+					li Fix smartphone camera distortions

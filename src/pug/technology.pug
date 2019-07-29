@@ -1,0 +1,10 @@
+extends base/layout
+
+append mainVars
+	- page = "technology"
+
+block main-content
+	.container-fluid
+		include pages/technology
+		include pages/homepage/_section-contact-small
+		include components/_modal-error

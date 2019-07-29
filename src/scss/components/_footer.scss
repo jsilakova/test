@@ -1,0 +1,184 @@
+$footerOpacity: .5;
+.footer {
+	
+	&-info {
+		flex: auto;
+		padding-right: 30px;
+		
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			text-align: center;
+			padding-right: 0;
+		}
+
+
+		&-holder {
+			display: flex;
+			justify-content: stretch;
+			padding: 35px 0 30px;
+			
+			@include media-breakpoint-down(md) {
+				flex-wrap: wrap;
+				padding: 0 0 15px;
+			}
+		}
+
+		&-links {
+			width: 50%;
+			
+			@include media-breakpoint-only(md) {
+				padding: 15px 15px 0;
+				width: 25%;
+			}
+			
+			@include media-breakpoint-up(lg) {
+				padding: 15px 3% 0;
+				width: auto;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 15px 5.5% 0;
+			}
+
+			&.sdk-links {
+				@include media-breakpoint-only(md) {
+					width: 45%;
+				}
+				@include media-breakpoint-down(sm) {
+					width: 100%;
+					padding: 0 0 23px;
+				}
+			}
+		}	
+	}
+
+	&-title {
+		text-transform: uppercase;
+		opacity: $footerOpacity;
+		font-size: 1.1rem;
+		margin: 0 0 30px;
+		
+		@include media-breakpoint-down(md) {
+			font-size: 0.75rem;
+			margin:  0 0 8px;
+		}
+	}
+
+	&-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		@include media-breakpoint-only(md) {
+			font-size: 0.9rem;
+		}
+		
+		li {
+			margin: 0 0 4px;
+		}
+		
+		a {
+			color:#fff;
+			text-decoration: none;
+			opacity: $footerOpacity;
+			transition: opacity .2s linear;
+			display: inline-block;
+			padding: 7px 0;
+			
+			@include media-breakpoint-down(md) {
+				padding: 4px 0;
+			}
+			
+			&:hover,
+			&:focus {
+				opacity: 1;
+			}
+		}
+	}
+
+	&-logo {
+		margin: 0 0 43px;
+		
+		@include media-breakpoint-only(md) {
+			margin: 0 0 25px
+		}
+		
+		img {
+			width: 160px;
+			height: auto;
+			
+			@include media-breakpoint-down(sm) {
+				width: 120px;
+			}
+		}
+	}
+
+	&-copy {
+		border-top: 1px solid rgba(255, 255, 255, 0.15);
+		font-size: 0.65rem;
+		color: #b7b8b7;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 0;
+		text-align: center;
+		
+		@include media-breakpoint-up(md) {
+			font-size: 0.85rem;
+			padding: 30px 0;
+			flex-direction: row;
+			text-align: left;
+			justify-content: space-between;
+		}
+
+		.copyright {
+			display: block;
+			
+			@include media-breakpoint-down(md) {
+				margin: 0 0 6px;
+				line-height: 1.46;
+			}
+		}
+	}
+
+	.social-list {
+		padding: 0 0 35px;
+		
+		@include media-breakpoint-up(lg) {
+			padding: 65px 0 0;
+		}
+
+		a:not(:last-child) {
+			@include media-breakpoint-down(md) {
+				margin: 0 40px 0 0;
+			}
+		}
+	}
+
+	.decor-triangle-line {
+		@include media-breakpoint-down(md) {
+			margin: 35px 0 23px;
+		}
+	}
+}
+
+@keyframes 'heart-anime' {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+
+.heart {
+	display: inline-block;
+	margin-right: 3px;
+	font-size: 	1rem;
+	animation-name: 'heart-anime';
+	animation-duration: 300ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}

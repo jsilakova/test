@@ -1,0 +1,125 @@
+.section-clients {
+	
+	@include media-breakpoint-up(xl) {
+    padding-bottom: 130px;
+  }
+}
+
+.logo-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 0 180px;
+
+	@include media-breakpoint-down(lg) {
+	    padding:0 0 100px;
+	  }
+
+	  @include media-breakpoint-down(md) {
+	    padding:0 20px 70px;
+	  }
+
+	  @include media-breakpoint-down(sm) {
+	    padding:0 0 32px;
+	  }
+	
+	a {
+		margin: 18px 20px;
+
+		&.mojicam-logo {
+
+			img {
+				max-height: 46px;
+			}
+		}
+
+		&:hover {
+			img {
+				filter: brightness(150%);
+				transform: scale(1.02);
+			}
+		}
+	}
+	
+	img {
+		display: block;
+		width: auto;
+		height: auto;
+		max-width: 225px;
+		max-height: 59px;
+		transition: filter .2s linear, transform .3s linear;
+		
+		@include media-breakpoint-down(lg) {
+	    	max-width: 200px;
+	  	}
+
+		@include media-breakpoint-down(sm) {
+	    	max-width: 90px;
+	  	}
+	}
+}
+
+
+//nikola app
+.promo-baner {
+
+	&-img {
+		@include media-breakpoint-down(md) {
+			margin: 0 auto 8px;
+			max-width: 400px;
+    		display: block;
+		}
+	}
+
+	&-description {
+		
+
+		@include media-breakpoint-up(lg) {
+			padding:10% 0 0;
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding-left: 73px;
+			padding:25% 0 0 73px;
+		}
+	}
+
+	.section-title {
+		margin-bottom: 35px;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 23px;
+	  }
+	}
+
+	p {
+		margin-bottom: 25px;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom:10px;
+	  }
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom:30px;
+
+		@include media-breakpoint-down(md) {
+			font-size: 0.85rem;
+			margin-bottom: 12px;
+	  }
+	}
+
+	.btn-holder {
+		padding-top:17px;
+
+		@include media-breakpoint-down(sm) {
+			padding-top:12px;
+
+			.btn {
+				width:100%;
+			}
+	  }
+	}
+}

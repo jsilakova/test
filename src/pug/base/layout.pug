@@ -1,0 +1,29 @@
+block mainVars
+  
+doctype html
+html(lang="en")
+  include html-head
+  
+  body
+    include mixins
+    
+    .wrapper
+      include ../components/_header
+
+      main.main
+        include _bg-visual
+        block main-content
+        
+      include ../components/_footer
+      include ../components/_modal-success
+      include ../components/_modal-error
+
+    //- Optional JavaScript
+    //- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="js/jquery.min.js"></script>
+    block footer-js
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js?v=1.0.92"></script>

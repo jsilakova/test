@@ -1,0 +1,25 @@
+#nokey {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100% !important;
+	height: 100% !important;
+	z-index:1;
+	
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
+}
+.container-fluid,
+.section-instagram {
+	position: relative;
+	z-index:2;
+}
+#canvasOne {
+	width: 800px;
+	height: 1000px;
+	border-radius: 50%;
+	margin-left: -50%;
+	margin-top: -50%;
+}

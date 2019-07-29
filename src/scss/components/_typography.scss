@@ -1,0 +1,30 @@
+h1 {
+
+  @include media-breakpoint-up(md) {
+    font-size: 2.8rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3.25rem;
+  }
+
+}
+
+.display-4 {
+
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 3.75rem;
+  }
+}
+
+hr {
+  border-color: rgba(255, 255, 255, .2);
+  margin: 30px 0;
+  
+  @include media-breakpoint-up(lg) {
+    margin: 50px 0;
+  }
+}

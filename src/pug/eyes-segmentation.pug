@@ -1,0 +1,16 @@
+extends base/layout
+
+block main-content
+	- var currentCount = 8
+	+sdk-description(currentCount)
+
+block sdkDescriptionContent
+	.section-content-block.mw-90
+		p 
+			= currentItem.preview
+	.section-content-block
+		h2 Use cases
+		ul.content-list
+			li Smart human-computer interaction solutions
+			li Biometric solutions
+			li Clinical and healthcare research

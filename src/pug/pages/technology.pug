@@ -1,0 +1,216 @@
+section.section.section-content
+	+breadcrumbs()
+	.mw-90
+		.section-content-block
+			h1.section-title Banuba cutting-edge AR technology for&nbsp;mobile&nbsp;apps 
+			h2 FaceAR SDK
+			p FaceAR SDK incorporates a mix of technologies, including face detection and tracking, eye gaze detection, estimation of distance from the smartphone, recognition of skin and hair color and hair style, and emotion recognition, a synergy that creates substantial user benefits for various applications.
+			p Banuba offers a unique partnership opportunity for up to ten app developers across the world to create AR-enabled products.
+			p The partners will receive:
+			ul.content-list
+				li Access to Banuba’s mobile AR SDK
+				li Marketing and business development support
+				li Funding for a joint venture as needed
+			p Among the first partners to take up the offer is game developer Inventain. Their team has received €1 million to develop their project jointly with us. This initiative is backed by major investors as part of an international programme to develop AI and AR technologies.
+			p The Banuba AR SDK is a unique product for mobile app developers. It is suitable even for constrained devices and combines several advanced technologies:
+			ul.content-list
+				li 3D face detection and tracking
+				li 3D face analysis, including detection of skin and hair color, and hair style
+				li Separation from background objects
+		.section-content-block
+			span.section-subtitle Banuba’s high performance is achieved thanks to:
+			ul.content-list
+				li
+					p
+						strong An integrated 3D math model, which removes the need for 2D point identification
+					p Other solutions create filters by identifying 2D points on the face first, then applying nonlinear equations to create a 3D model of the head. 
+					p Banuba technology is different. It establishes a 3D model of the head directly, skipping the identification of 2D points. This makes the solution vastly more accurate. The 3D math model (Face Kernel ™), developed by Banuba, reduces all possible transformations to a limited number of variables.  
+					p Meanwhile, direct creation of the 3D model leads to a high degree of precision. This is due to removing the need to perform 2D-to-3D transformation. <br><br>
+
+				li
+					p
+						strong Datasets tuned to work perfectly with Banuba algorithms
+					p Creating a suitable data set of face structures is a challenge for most providers. For example, some variables are not structured and remain subjective – such the classification of hairstyles.
+					p To create such data sets, Banuba uses complementary systems. Semi-supervised metric learning and generative adversarial networks (GANs) work together. We use hand-crafted, hand-tuned code alongside compilers, harnessing human ability where necessary.
+					p In machine learning, some say, jokingly, that a data set is more important than the algorithm. But this is perhaps not just a joke. Banuba doesn’t use pre-existing data sets – or, to be exact, Banuba uses them only as a part of its own data sets.  
+					p This is because some data sets simply don’t exist. Where they do exist, a correctly constructed data set, if tuned to the learning algorithm, can significantly reduce the learning error. To create data sets, Banuba uses semi-supervised learning, a constraint form of active learning and domain adaptation methods.
+					p Today, unfortunately, or perhaps fortunately, taking a data set, using your preferred machine learning method and compiling the result with the “-O3” key is no longer enough to develop a state-of-the-art solution. 
+					p Banuba has designed in-house math models to significantly simplify the effort. This cuts the execution time on a smartphone, reduces the learning time for the algorithm, and allows the use of a larger data set, which in turn improves the quality of the operation. Banuba uses a rather unconventional form of deep learning, mixing CNNs and different variations of Random Forests.  <br><br>
+
+				li
+					p 
+						strong Optimization for specific architectures, namely Apple A9, A10, A11 CPUs and Android
+					p In addition, Banuba has developed unconventional types of neural network layers, tuned to specific architectures, namely Apple A9, A10, A11 CPUs and Android. 
+					p All these features allow the Banuba AR SDK to be supported even by constrained devices, providing effective and fast performance on 90% of smartphones. Last but not least, the Banuba AR SDK will not drain battery like many applications. This significantly enhances the experience of those who use applications built with Banuba AR SDK. <br><br>
+		.section-content-block
+			h2 1. 3D Face Motion Tracking
+			h3 1.1 Face detection and head pose tracking
+			img.img-fluid.section-image(src="assets/images/technology/image-01.jpg", alt="Face detection and head pose tracking image")
+			p This technology detects the face and head-pose movements. Once the face has been detected, the algorithm switches to head-pose tracking mode by using the position of the head on the previous image as the initial approximant. If the face is lost, the algorithm switches back to face detection mode.
+			p Based on a directly inferred 3D model of the head (rather than one transformed from a 2D model), the technology is also operable even with a low SNR (signal to noise ratio) and poor lighting conditions. The incorporated model can forecast the appearance of the head in the subsequent frame, increasing stability and precision.
+			p The size of the data set is 300,000 faces.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li High performance (60 fps)
+				li High quality
+				li Extreme angles, ranging from –90 to +90
+				li Efficient operation in poor lighting conditions
+				li Operation with even with obstructions of up to 50% of the face
+				li Stable detection and resistance to partial obstructions of the face, including glasses and complex haircuts
+				li Depending upon needs, a 3D model of a face with 64 to 3,308 peaks is created
+				li Supports 360 degrees rotation of the smartphone camera
+				li Estimation of distance from the smartphone
+		.section-content-block
+			h3.max-gap Eye tracking and gaze detection
+			img.img-fluid.section-image(src="assets/images/technology/image-02.jpg", alt="Eye tracking and gaze detection image")
+			p Thanks to this technology, it is possible to both “track” a person’s gaze, and control a smartphone’s function with eye movements. An algorithm detects micro-movements of the eye with subpixel accuracy in real-time. Based on that data, a vector of movement is created.
+			p Banuba’s face recognition algorithm helps to measure the distance to various points on a scanned surface with a high degree of precision and to detect its shape. It can detect, for instance, whether the user’s eyes are open or closed.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li High degree of precision
+				li Eye pupil detection and tracking
+				li Eye states: open &amp; closed
+				li Eye blinking
+				li Attention tracking
+		.section-content-block
+			h3 Facial motion capture
+			p Face Motion Capture involves scanning facial movements and converting them to computer animation for movies, games, or real-time avatars. It can operate either in the real-time or based on the user’s preliminarily saved data or/and their face-motion models. Derived from the movements of real people, the technology results in more realistic and nuanced computer character animation than if the animation were created manually.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Fast execution – operates in real-time based on at least one or several frames. Each consequent frame may improve the model.
+				li Can be integrated into the Face Recognition pipeline in order to develop precise models of users combining both visual similarity and the resemblance of facial gestures, emotions and other motion-related features.
+		.section-content-block
+			h3 3D face motion capture applications
+			ul.content-list
+				li Face recognition (biometrics)
+				li Autofocus (photography)
+				li Unconventional elements of the user interface, games
+				li Measuring user interaction and engagement with in-app ads
+				li Behavioral analytics of mobile UI/UX based on eye gaze tracking
+				li Work style analysis: eyes blinking frequency, analysis of employee attention concentration, estimation of employee type of activity: typing, reading, calculation of onscreen time spent. <br><br>
+		.section-content-block
+			h2 2. 3D Face Analysis
+			h3 2.1 Face segmentation
+			p Face segmentation is a specific computer vision task which assigns labels to facial features such as nose, mouth, eye, hair, etc., to each pixel in a face image. Our face segmentation techniques include complex cascaded machine learning algorithms in combination with color model and Monte Carlo approaches. This leads to precise detection of eyes, their structure (iris, pupil, eyeball, etc.) and the nose, ear, cheek, chin, mouth, lip eyebrow and forehead.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Access over a convenient API
+				li Separate parts of the face can be detected for further analysis
+		.section-content-block
+			h3 2.2 Evaluation of anthropometric parameters
+			p Facial anthropometry refers to the measurement of the individual facial features. Our novel algorithm automatically detects a set of anthropometric facial fiducial points that are associated with these features. This makes it possible to recognize refined facial patterns and recreate detailed semantics, mimics and anthropometrics.
+		.section-content-block
+			h3 Features and applications
+			ul.content-list
+				li Access over a convenient API
+				li Reconstruction of face geometry “cleaned” of mimics
+				li Creation of caricature avatars in an instant
+		.section-content-block
+			h3.max-gap 2.3 Skin and hair color
+			img.img-fluid.section-image(src="assets/images/technology/image-03.jpg", alt="Skin and hair color image")
+			p Banuba has developed a library for detecting hair and skin color for iOS. The area above the person’s forehead is used for hair color detection as it is less sensitive to head’s turns than other areas of hair. The technology recognises sharp intensity patterns above the hairline and analyzes color. There will be no such sharp intensity patterns for bald individuals, so our technology also allows us to detect the lack of hair.
+			p To detect skin color samples are taken from areas of the face that algorithms point to as specifically being face skin.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Precise color measurement
+		.section-content-block
+			h3 Applications
+			ul.content-list
+				li Visual skin color and skin tone correction
+				li Skin-related disorder detection
+				li Virtual makeup
+		.section-content-block
+			h3 2.4 Hair style detection
+			p This technology is based on convolutional neural networks. The learning sample selection consists images of men and women, categorised by their hairstyle. Learning is the process of matching an image with the most relevant hairstyle sample.
+			p Semi-supervised metrics learning was used for the creation of the data set. Subsequently, a GAN was trained for the expansion of the data set, upon which, the final network was trained. To improve quality, a loss function, specifically selected for the task, was used.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Detecting hair style, hair color
+				li Changing hair color
+				li Haircuts of any shape can be detected, regardless of hair length
+				li The algorithm distinguishes with pixel precision between hair, face and other parts, such as beard, moustache or glasses
+				li Matting is done with pixel precision. If the background is seen through the hair, it is detected as part of the hair.
+		.section-content-block
+			h3 Applications
+			ul.content-list
+				li Virtual hair salon: trying out new hair colors and hair styles
+				li Detecting hair style for 3D avatar creation
+		.section-content-block
+			h3.max-gap 2.5 Emotion and expression recognition
+			img.img-fluid.section-image(src="assets/images/technology/image-04.jpg", alt="Emotion and expression recognition image")
+			p People’s emotions are reflected on their faces, and with the ability to “read a face” it is possible to deliver more personalized content. Our technology allows us to detect six basic emotions; anger, disgust, fear, happiness, sadness, and surprise.
+			p The variables of the model returned by the recognition algorithm can be used either directly, or transformed into parameters for another model, such as Facial Action Coding System (FACS), which detects muscle movements that correspond to specific emotions.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Real-time detection of anger, disgust, fear, happiness, sadness, and surprise
+				li Access to a convenient API
+				li Conversion of data to <a class="link" href="https://www.paulekman.com/" target="_blank"> Paul Ekman</a>'s <a  class="link" href="https://www.paulekman.com/product-category/facs/" target="_blank">Facial Action Coding System</a>
+		.section-content-block
+			h3 Applications
+			ul.content-list
+				li Mood-related content in mobile applications, such as three-dimensional visual masks that reflect users’ feelings while they are communicating in mobile video chats
+				li Targeted advertisement
+				li Detection of tiredness and degree of stress
+				li Use of emotional reactions to a product or content in empathic apps and advertisements
+				li Creation of human-friendly digital products which react to human mimics
+				li Detection of emotional states of patients for health purposes (helping schizophrenic patients)
+		.section-content-block
+			h3.max-gap 2.6 Face Beautification
+			img.img-fluid.section-image(src="assets/images/technology/image-05.jpg", alt="Face Beautification image")
+			p This technology is used for creating visually beautified images of users. Anthropometric data and mimics are analyzed and corrected in real time.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Smoothing of skin
+				li Correction of face skin tone
+				li Whitening of eyes and teeth
+				li Correction of face shape (make it slimmer, wider, increase/decrease eye size, change the shape of the nose and head proportions)
+				li Change hair color
+				li Improve face symmetry
+				li Shape and color eyebrows
+				li Correction of lip shape
+				li Virtual makeup
+				li Face morphing
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Improving the user’s look during video chat
+				li Cosmetic surgery: ‘Before’ and ‘after’ visual aids during consultation with a patient
+				li Cosmetics: application of  makeup / choosing which makeup product suits consumer
+				li Demoing effects of face skin products
+				li Fixing smartphone camera distortions
+				li Make selfies more attractive
+		.section-content-block
+			h2 3. Separating user image from the background.
+			p Banuba has developed a library to separate a person’s image from the background for Apple iOS.
+			p This technology can be used for the real-time replacement of backgrounds with both static and animated textures. Backgrounds can be changed into a number of optional presets during video calls or used as an engaging effect in advertising.
+			p The technology is based on convolutional neural networks, with color images as the input and a probability mask showing whether a pixel belongs to the class “person” or to the class “background.” This allows us to ensure high performance and results for real-time backgrounds.
+			p The problem of lack of data sets for separation of objects from the background is resolved by the creation of a small initial data set, which is increased by active learning and subsequent fine-tuning.
+			p A correctly selected data set helps to obtain optimal results and high-quality implementation.
+		.section-content-block
+			h3 Features
+			ul.content-list
+				li Augmentation of raw output with classic algorithms for computer vision and signal filtration – lightweight post processing (deletion of small contours, precise definition of borders, additional image recognition).
+				li Post-processing, including mating, filters and removal of small objects
+				li Portrait mode and bokeh effect
+		.section-content-block
+			h3 Applications
+			ul.content-list
+				li Replacement of an unsuitable background and noise removal
+				li Animation effects in the background that are changed by the user as part of interactivity
+				li Animated emotion-related background
+				li Advertisements
+				li Adding colors
+				li Protection of privacy
+				li 360-degree background 2D and 3D for educational purposes, e.g. for mixed reality
+				li ‘Hollywood effects’ on a mobile phone
+				li Replacing backgrounds for practical purposes (e.g. during a business call) or to entertain (e.g. jungle instead of a wall)
+				li Editing “boring” backgrounds to create perfect videos
+				li Removing unwanted objects or people from videos

@@ -1,0 +1,194 @@
+mixin list-item(itemText, itemTitle)
+	li(data-aos="fade-up")
+		if itemTitle
+			strong.content-list-title
+				= itemTitle
+		span.content-list-text    
+			= itemText
+
+mixin menu-item(link, textLink, classState)
+	li.nav-item(class = classState) 
+		a.nav-link(href=link)
+			= textLink
+
+
+mixin breadcrumbs(textLink, link)
+	nav
+		ol.breadcrumb
+			li.breadcrumb-item
+				if textLink
+					a(href = link) 
+						= textLink
+				else
+					a(href="/") Back to Home
+
+
+mixin contactBlock(classBlock)
+	section.section.section-contact
+		.brand-holder
+			.brand-decor-content
+				.box.bg-secondary(class = classBlock)
+					#contact-section
+						.contact-form-holder
+							if classBlock == 'contact-box-max'
+								.row.align-items-center
+									.col-lg-7
+										include ../components/_form-contact-us
+									.col-md-5.d-none.d-lg-block
+										img.img-fluid(src="assets/images/contact/step-up.svg")
+							else 
+								include ../components/_form-contact-us
+						.contact-success
+							if classBlock == 'contact-box-max'
+								.row
+									.col-lg-7
+										include ../components/_form-contact-success
+
+									.col-md-5.d-none.d-lg-block
+										img.img-fluid(src="assets/images/contact/success-hand.svg")
+							else
+								include ../components/_form-contact-success
+
+//- for sdk video list
+mixin sdk-list(currentCount)
+	- var videoSrc =           locals.tech[currentCount].url
+	- var videoPosterClass =   locals.tech[currentCount].name
+	- var videoTitle =         locals.tech[currentCount].title
+	- var readMore =           locals.tech[currentCount].link
+
+	.col-md-6
+		.card.bg-dark
+			.card-video(class=videoPosterClass)
+				.embed-responsive.embed-responsive-16by9
+					iframe.embed-responsive-item(src=videoSrc, frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+			.card-description
+				h4.card-title.card-title-all
+					a(href=readMore)
+						= videoTitle
+
+//- for SDK description
+mixin sdk-description(currentCount)
+	- var currentItem = locals.tech[currentCount]
+	- var pageTitle =   locals.tech[currentCount].title
+	- var videoSrc =    locals.tech[currentCount].url
+	- var videoClass =  locals.tech[currentCount].name
+
+	.container-fluid
+		section.section.section-content
+			+breadcrumbs("Back to SDK Tutorials", "/sdk-tutorials")
+			
+			.section-content-header
+				h1.section-title 
+					= pageTitle
+				a.btn.btn-primary.btn-brand.btn-lg.d-none.d-md-block(href="/request-sdk-demo") Get SDK
+			.section-video
+				.brand-frame
+					.brand-holder
+						.brand-decor-content
+							.video-holder.embed-responsive.embed-responsive-16by9(class = videoClass)
+								if (videoSrc !== "none")
+									iframe.embed-responsive-item(src=videoSrc, frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+				a.btn.btn-primary.btn-brand.btn-lg.d-block.d-md-none(href="/request-sdk-demo") Get SDK
+			.section-container
+				.section-tech-info-text
+					block sdkDescriptionContent
+			
+				.section-paging
+					
+
+					if (currentCount === 0)
+						- var countNext = (currentCount +1)
+						.link-holder.prev
+							a.link.link-next(href=locals.tech[countNext].link)
+								img.img-arrow(srcset="assets/icons/arrow-right.png, assets/icons/arrow-right@2x.png 2x", src="assets/icons/arrow-right.png", alt="") 
+								span.d-none.d-lg-block
+									= locals.tech[countNext].title
+								span.d-block.d-lg-none Next
+
+						
+					if (currentCount === 10)
+						- var countPrev = (currentCount - 1)
+						.link-holder
+							a.link.link-prev(href=locals.tech[countPrev].link)
+								img.img-arrow(srcset="assets/icons/arrow-left.png, assets/icons/arrow-left@2x.png 2x", src="assets/icons/arrow-left.png", alt="") 
+								span.d-none.d-lg-block
+									= locals.tech[countPrev].title
+								span.d-block.d-lg-none Next
+
+					if (1 <= currentCount && currentCount <= 9)
+						- var countPrev = (currentCount - 1)
+						- var countNext = (currentCount +1)
+						.link-holder.prev
+							a.link.link-prev(href=locals.tech[countPrev].link)
+								span.d-block.d-lg-none Previous
+								span.d-none.d-lg-block
+									= locals.tech[countPrev].title
+								img.img-arrow(srcset="assets/icons/arrow-left.png, assets/icons/arrow-left@2x.png 2x", src="assets/icons/arrow-left.png", alt="") 
+						.link-holder
+							a.link.link-next(href=locals.tech[countNext].link)
+								img.img-arrow(srcset="assets/icons/arrow-right.png, assets/icons/arrow-right@2x.png 2x", src="assets/icons/arrow-right.png", alt="") 
+								span.d-none.d-lg-block
+									= locals.tech[countNext].title
+								span.d-block.d-lg-none Next
+
+					
+						
+
+						
+						
+			
+		include ../pages/homepage/_section-contact-small
+
+//- Technologies navigation for tab 
+mixin link-tech(textLinkTech, anchor, activeState, activeClass)
+
+	- var targetID = anchor + '-tab'
+	- var targetLink = '#' + anchor
+
+
+	a.btn.btn-outline-primary.btn-sm.btn-rounded(id=targetID, class=activeClass, data-toggle="tab", href=targetLink, aria-controls=anchor,  role="tab",  aria-selected=activeState)
+		span 
+			=textLinkTech
+
+//- Technologies navigation for tab content
+mixin tech-content(anchorLink, head, linkMore, srcVideo, classVideo, stateKey, textPreview)
+
+	- var headingBlock = 'heading' + anchorLink
+	- var collapseBlock = 'collapse' + anchorLink
+	- var tabID =  anchorLink 
+	- var areaTab = anchorLink + "-tab"
+
+
+	.tech-content-item.tab-pane.fade(id=tabID, class=stateKey, aria-labelledby=areaTab, role="tabpanel")
+		div(id=headingBlock)
+			button.btn.btn-link.btn-tech-mobile(type="button", data-toggle="collapse", data-target="#"+collapseBlock, aria-expanded="false", aria-controls=collapseBlock) 
+				= head
+		.tech-content-frame.collapse(id=collapseBlock, aria-labelledby=headingBlock, data-parent="#technologiesContent")
+			.tech-content-holder
+				.row
+					.col-lg-6
+						h2 
+							= head
+						p 
+							= textPreview
+						p
+							a.read-more(href=linkMore) Read more
+						.btn-holder
+							a.btn.btn-primary.btn-brand(href="/request-sdk-demo") Try It
+							a.btn.btn-outline-light.btn-brand.tech-download(href="assets/files/Banuba-amazing_computer_vision_technology.pdf", target="_blank", download) Download PDF
+							if srcVideo !== 'none'
+								a.btn.btn-primary.btn-brand.btn-watch-video(href="#", data-video=srcVideo) 
+									span Watch video
+					.col-lg-6
+						.tech-video
+							.brand-holder
+								.brand-decor-content
+									.video-holder.embed-responsive.embed-responsive-16by9(class = classVideo)
+										if srcVideo !== 'none'
+											iframe.embed-responsive-item(src=srcVideo, frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+mixin insta(srcImg, dataAos, dataAosDelay)
+
+	-var srcImgInsta = "assets/images/instagram/" + srcImg + ".jpg"
+	.photo(data-aos=dataAos, data-aos-delay=dataAosDelay)
+		.photo-frame
+			img(src = srcImgInsta, alt="photo from instagram")
